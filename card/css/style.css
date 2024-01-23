@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-transform: none;
+    box-sizing:border-box;
+    font-family: "Poppins";
+}
+section{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#1c1c25;
+    width: 100%;
+    height: 100vh;
+}
+section::before{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(#f00, #f0f);
+    border-radius:50%;
+    right: -25%;
+    bottom: -18%;
+}
+
+.card{
+    position: absolute;
+    width: 508px;
+    height: 314px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius:15px;
+    /* backdrop-filter: blur(10px);   */
+    transform-style: preserve-3d;
+    transition: 2s;
+    backface-visibility: hidden;
+}
+.card:hover .face.front {
+    transform: rotateY(180deg);
+  }
+  .card .face.back {
+    transform: rotateY(180deg);
+  }
+  .card:hover .face.back {
+    transform: rotateY(360deg);
+  }
+.card .face.front::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius:50%;
+    bottom:25px;
+    right: 30px;
+    opacity: 0.5;
+}
+.card .face.front::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius:50%;
+    bottom:25px;
+    right: 70px;
+    opacity: 0.5;
+}
+.card .face.front h3:nth-child(1){
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+}
+.card .face.front h3:nth-child(2){
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+}
+.card .face.front img{
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    width: 90px;
+}
+.card .face.front .front-pragraph1 {
+    color:white;
+    position: absolute;
+    top: 145px;
+    left: 20px;
+    font-weight: 500;
+    font-family: 'Orbitron';
+    letter-spacing: 4px;
+}
+.card .face.front .front-pragraph2{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: #fff;
+    letter-spacing: 0.3px;
+}
+.card .face.front .front-pragraph3{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    color:#fff;
+    font-weight: 500;
+}
+.card .face.front .front-pragraph4{
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    color: #fff;
+}
+.card .face.back div{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 50px;
+    left: 0%;
+    right: 0%;
+    background-color:black;
+}
+.card .face.back .back-pragrph1{
+    position: absolute;
+    top: 90px;
+    color: #fff;
+    left: 20px;
+}
+.card .face.back input{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 90%;
+    height: 40px;
+}
+.card .face.back .passoword-numer{
+    position: absolute;
+    /* color: #fff; */
+    top: 125px;
+    left: 92%;
+    padding: 4px 8px;
+    background-color: rgba(102, 119, 128, 0.9);
+}
+.card .face.back .back-pragrph2{
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    color: #fff;
+    letter-spacing: 0.04rem;
+    line-height: 1.6rem;
+}
