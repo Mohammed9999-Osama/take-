@@ -4,6 +4,6 @@
 
 |ID|Name|Preview|
 |----|----|----|
-|1|Card |[Click here ](https://mohammed9999-osama.github.io/take-/card/)|
+|1|Card |[Click here ](https://mohammed9999-osama.github.io/takes/card/)|
 
 
