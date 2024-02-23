@@ -9,5 +9,6 @@
 |3|Card |[Click here ](https://mohammed9999-osama.github.io/tasks/counter/)|
 |4|Card |[Click here ](https://mohammed9999-osama.github.io/tasks/bmi-calculator/)|
 |5|Card |[Click here ](https://mohammed9999-osama.github.io/tasks/Navbar-project/)|
+|6|Card |[Click here ](https://mohammed9999-osama.github.io/tasks/photo-gallery/)|
 
 
